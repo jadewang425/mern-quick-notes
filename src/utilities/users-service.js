@@ -9,7 +9,7 @@ export async function signUp(userData) {
 
 export async function login(credentials) {
     // return JWT token
-    console.log('users-service check point')
+    // console.log('users-service check point')
     const token = await usersAPI.login(credentials)
     localStorage.setItem('token', token)
     return getUser()

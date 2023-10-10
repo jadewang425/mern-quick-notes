@@ -19,7 +19,7 @@ export async function signUp(userData) {
 
 
 export async function login(credentials) {
-    console.log('api check point')
+    // console.log('api check point')
     const res = await fetch(`${BASE_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
